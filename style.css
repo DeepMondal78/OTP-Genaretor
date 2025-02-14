@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #585757;
+    padding: 0 30px;
+}
+
+.input {
+    max-width: 480px;
+    width: 100%;
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.inputBox {
+    position: relative;
+    height: 60px;
+    margin: 25px 0;
+}
+
+.inputBox input {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 4px 0 16px;
+    border-radius: 6px;
+    border: 2px solid #a6a6a6;
+    transition: all 0.3s ease;
+}
+
+.inputBox label, .inputBox i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a6a6a6;
+}
+
+.inputBox input:focus {
+    border-color: #407044;
+}
+
+.inputBox label {
+    left: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    background: #fff;
+    padding: 0 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.inputBox input:focus ~ label, 
+.inputBox input:valid ~ label {
+    top: 0;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+
+}
+.inputBox i {
+    right: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+}
+.alert i {
+    margin-right: 8px;
+    color: #d93025;
+    font-size: 18px;
+    display: none;
+}
+
+.alert .text {
+    color: #a6a6a6;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content button {
+    width: 70px;
+    height: 25px;
+    margin: 8px 4px;
+    border: 1px solid #c5c2c2;
+    border-radius: 6px;
+    color: #ffff;
+    background-color: rgba(255, 0, 0, 0.733);
+    cursor: pointer;
+}
+
+.content input {
+    width: 50%;
+    height: 25px;
+    margin: 0 4px;
+    padding: 12px 8px;
+    color: #a6a6a6;
+    font-weight: 500;
+    border: 2px solid #a6a6a6;
+    border-radius: 6px;
+}
+
+.inputBox.button #button {
+    width: 150px;
+    height: 40px;
+    background: rgba(255, 0, 0, 0.733);
+    border: 1px solid #c5c2c2;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+
+.inputBox.button #button.active:hover{
+    background: red;
+    cursor: pointer;
+}
+
+/* .success-message i, p {
+    display: none;
+} */
